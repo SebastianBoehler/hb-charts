@@ -1,5 +1,10 @@
 # HB Charts
 
+[![CI](https://github.com/SebastianBoehler/hb-charts/actions/workflows/ci.yml/badge.svg)](https://github.com/SebastianBoehler/hb-charts/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/SebastianBoehler/hb-charts)](https://github.com/SebastianBoehler/hb-charts/releases/latest)
+[![License](https://img.shields.io/github/license/SebastianBoehler/hb-charts)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
 Native Canvas2D financial charts for research interfaces.
 
 HB Charts is the open-source renderer behind the market charts at
@@ -7,6 +12,8 @@ HB Charts is the open-source renderer behind the market charts at
 for ordered OHLCV bars, generic price and pane layers, markers, price levels,
 themes, and viewport interaction. The renderer does not require React; a React
 adapter and public Bybit/OKX realtime adapters are included.
+
+[![HB Charts rendering BTCUSDT candles with EMA, volume, and RSI](docs/assets/hb-charts-demo.png)](https://www.hb-capital.app/charts)
 
 > **GitHub source release v0.1.2:** HB Charts is not published to npm yet. Clone
 > the repository or install the pinned GitHub tag. Compiled ESM and declarations

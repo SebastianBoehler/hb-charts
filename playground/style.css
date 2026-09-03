@@ -9,7 +9,6 @@ body { margin: 0; min-width: 320px; }
 main { margin: 0 auto; max-width: 1440px; min-height: 100svh; padding: 32px; }
 header, footer { align-items: end; display: flex; justify-content: space-between; gap: 24px; }
 header { border-bottom: 1px solid #252a35; padding-bottom: 24px; }
-header p { color: #98a2b3; font: 11px ui-monospace, monospace; letter-spacing: 0.14em; margin: 0 0 8px; text-transform: uppercase; }
 h1 { font-size: clamp(36px, 6vw, 72px); font-weight: 500; letter-spacing: -0.055em; line-height: 0.9; margin: 0; }
 #status { color: #98a2b3; font-size: 13px; }
 #status[data-error] { color: #ef6b73; }

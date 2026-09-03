@@ -44,6 +44,7 @@ try {
       bars = mergeRealtimeBar(bars, bar, "60");
       const next = indicators();
       chart.update({ bars, layers: next.layers, panes: next.panes });
+      status.textContent = "Bybit · live";
     },
     onStatus: (connection) => { status.textContent = `Bybit · ${connection}`; },
     resolution: "60",
