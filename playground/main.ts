@@ -27,7 +27,14 @@ async function loadHistory() {
 
 try {
   let bars: ChartBar[] = await loadHistory();
-  const indicators = () => buildStandardIndicators(bars, ["ema", "volume", "rsi"]);
+  const indicators = () => buildStandardIndicators(bars, [
+    "ema",
+    "vwap",
+    "bollinger",
+    "volume",
+    "macd",
+    "rsi",
+  ]);
   const initial = indicators();
   const chart = createChart(container, {
     ariaLabel: "BTCUSDT hourly candlestick chart",

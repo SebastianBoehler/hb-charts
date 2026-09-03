@@ -13,7 +13,19 @@ for ordered OHLCV bars, generic price and pane layers, markers, price levels,
 themes, and viewport interaction. The renderer does not require React; a React
 adapter and public Bybit/OKX realtime adapters are included.
 
-[![HB Charts rendering BTCUSDT candles with EMA, volume, and RSI](docs/assets/hb-charts-demo.png)](https://www.hb-capital.app/charts)
+## In production
+
+HB Charts inside the live HB Capital Markets workspace, combining price,
+session context, studies, and product navigation.
+
+[![HB Charts integrated into the HB Capital Markets workspace](docs/assets/hb-capital-integration.png)](https://www.hb-capital.app/indicators)
+
+## Advanced composition
+
+The standalone public example composes EMA, VWAP, Bollinger Bands, volume,
+MACD, and RSI over live BTCUSDT data.
+
+[![HB Charts advanced BTCUSDT configuration](docs/assets/hb-charts-demo.png)](https://www.hb-capital.app/charts)
 
 > **GitHub source release v0.1.2:** HB Charts is not published to npm yet. Clone
 > the repository or install the pinned GitHub tag. Compiled ESM and declarations
