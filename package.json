@@ -1,32 +1,32 @@
 {
   "name": "@hb-capital/charts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Native Canvas2D financial charts for research interfaces.",
   "type": "module",
   "sideEffects": false,
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
     },
     "./react": {
-      "types": "./dist/react/index.d.ts",
-      "import": "./dist/react/index.js"
+      "types": "./src/react/index.ts",
+      "import": "./src/react/index.ts"
     },
     "./providers/bybit": {
-      "types": "./dist/providers/bybit.d.ts",
-      "import": "./dist/providers/bybit.js"
+      "types": "./src/providers/bybit.ts",
+      "import": "./src/providers/bybit.ts"
     },
     "./providers/okx": {
-      "types": "./dist/providers/okx.d.ts",
-      "import": "./dist/providers/okx.js"
+      "types": "./src/providers/okx.ts",
+      "import": "./src/providers/okx.ts"
     }
   },
   "files": [
-    "dist",
+    "src",
     "LICENSE",
     "NOTICE",
     "CHANGELOG.md",
@@ -37,7 +37,6 @@
     "check:files": "bun scripts/check-file-size.ts",
     "check": "bun run check:files && bun run typecheck && bun test && bun run build",
     "playground": "vite playground",
-    "prepare": "tsc -p tsconfig.build.json",
     "test": "bun test",
     "typecheck": "tsc --noEmit"
   },

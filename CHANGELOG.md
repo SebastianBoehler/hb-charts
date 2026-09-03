@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 — 2026-09-03
+
+- Export TypeScript source directly so Git installs require no lifecycle trust.
+
 ## 0.1.0 — 2026-09-03
 
 - Extract the Canvas2D financial chart renderer behind HB Capital.
