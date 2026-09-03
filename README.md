@@ -8,14 +8,14 @@ for ordered OHLCV bars, generic price and pane layers, markers, price levels,
 themes, and viewport interaction. The renderer does not require React; a React
 adapter and public Bybit/OKX realtime adapters are included.
 
-> **Source-only v0.1.1:** HB Charts is not published to npm yet. Clone the
-> repository or install the pinned GitHub tag. The package exports TypeScript
-> source directly and does not run an install script.
+> **GitHub source release v0.1.2:** HB Charts is not published to npm yet. Clone
+> the repository or install the pinned GitHub tag. Compiled ESM and declarations
+> are included, so the package does not run an install script.
 
 ## Install from GitHub
 
 ```bash
-bun add github:SebastianBoehler/hb-charts#v0.1.1
+bun add github:SebastianBoehler/hb-charts#v0.1.2
 ```
 
 Or clone and build it directly:
