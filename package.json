@@ -1,0 +1,82 @@
+{
+  "name": "@hb-capital/charts",
+  "version": "0.1.0",
+  "description": "Native Canvas2D financial charts for research interfaces.",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.js"
+    },
+    "./providers/bybit": {
+      "types": "./dist/providers/bybit.d.ts",
+      "import": "./dist/providers/bybit.js"
+    },
+    "./providers/okx": {
+      "types": "./dist/providers/okx.d.ts",
+      "import": "./dist/providers/okx.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check:files": "bun scripts/check-file-size.ts",
+    "check": "bun run check:files && bun run typecheck && bun test && bun run build",
+    "playground": "vite playground",
+    "prepare": "tsc -p tsconfig.build.json",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "canvas",
+    "candlestick",
+    "charting",
+    "finance",
+    "trading"
+  ],
+  "author": "HB Capital UG (haftungsbeschränkt)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianBoehler/hb-charts.git"
+  },
+  "homepage": "https://www.hb-capital.app/charts",
+  "bugs": {
+    "url": "https://github.com/SebastianBoehler/hb-charts/issues"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.5",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.3"
+  }
+}

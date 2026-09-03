@@ -1,0 +1,17 @@
+name: Feature request
+description: Propose a reusable chart capability backed by a concrete use case.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: Use case
+      description: Describe the chart behavior and the two or more consumers that need it.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed interface
+      description: Explain what callers would need to know and which complexity remains internal.
+    validations:
+      required: true
